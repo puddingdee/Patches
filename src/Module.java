@@ -3,6 +3,8 @@ public class Module {
 	protected static final int HPCHARLENGTH = 3;
 	protected static final int UHEIGHT = 10;
 	protected int HP;
+	protected int jackAmt;
+	public Jack[] allJacks = new Jack[jackAmt];
 	protected static final int U = 3;
 
 	
@@ -13,6 +15,10 @@ public class Module {
 		
 		this.HP = HP;
 		
+	}
+	
+	public Jack[] getAllJacks() {
+		return allJacks;
 	}
 	
 	public String toString() {
